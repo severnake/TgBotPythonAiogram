@@ -13,7 +13,7 @@ async def process_hello(message: types.Message):
 
 @dp.message_handler(commands=['hi'])
 async def process_help(message: types.Message):
-      await bot.send_message(message.from_user.id, 'Наши кнопки', reply_markup=kb.markup3)
+      await bot.send_message(message.from_user.id, 'Наши кнопки', reply_markup=kb.markup_requests)
 
 @dp.message_handler(commands=['help'])
 async def process_help(message: types.Message):
